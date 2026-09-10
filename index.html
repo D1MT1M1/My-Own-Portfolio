@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMITRIY VOROSHKOV // PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Прелоадер -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="rune-shard"></div>
+            <span class="preloader-text">LOADING PORTFOLIO...</span>
+            <div class="preloader-bar"><div class="preloader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Журнальная типографика по бокам -->
+    <div class="hero-text left">
+        <h1 class="glitch-text">DMITRIY<br>VOROSHKOV</h1>
+    </div>
+    
+    <div class="hero-text right">
+        <p class="title">ВИДЕОМОНТАЖЁР</p>
+        <p class="stats">1.5M+ VIEWS</p>
+        <p class="tags">VFX // SYNC // EDIT</p>
+    </div>
+
+    <!-- Индикатор скролла -->
+    <div class="scroll-hint" id="scrollHint">
+        <span>SCROLL TO SHATTER</span>
+        <div class="scroll-arrow">↓</div>
+    </div>
+
+    <!-- Центральный контейнер с фото -->
+    <div class="shatter-wrapper" id="shatterWrapper">
+        <div id="shatterContainer" class="shatter-grid">
+            <!-- Осколки генерируются через JS -->
+        </div>
+    </div>
+
+    <!-- Терминал -->
+    <div id="terminal">
+        <div class="term-output" id="termOutput">SYSTEM ONLINE [STATIC NODE]. TYPE 'help' FOR COMMANDS.</div>
+        <div class="term-input-line">
+            <span>GUEST@PORTFOLIO:~$ </span>
+            <input type="text" id="termInput" autocomplete="off" spellcheck="false">
+        </div>
+    </div>
+
+    <!-- Модальное окно (Плеер) -->
+    <div class="modal-overlay" id="videoModal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">[ ЗАКРЫТЬ ]</button>
+            <h3 id="modalTitle"></h3>
+            <video id="modalVideo" controls></video>
+        </div>
+    </div>
+
+    <button id="ambientToggle" class="ambient-btn">AMBIENT: OFF</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
